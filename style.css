@@ -16,27 +16,55 @@ main{
     margin: 0;
     height: 93vh;
     background-color: #8ED7E1;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 canvas{
     background-color: white;
-    position: absolute;
+    /* position: absolute; */
     height: 93%;
     width: 98%;
-    left: 0;
+    /* left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
-    margin: auto auto;
+    bottom: 0; */
+    margin-top: 3vh;
     /* inset: 0; */
     border-radius: 10px;
 
 }
 
+.tools{
+    flex-basis: 250px;
+    background-color: #EDF5FC;
+    box-sizing: border-box;
+    height: 93%;
+    border-radius: 10px;
+    margin-top: 3vh;
+    padding: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.tools h1{
+    font-family: 'Sigmar', cursive;
+    letter-spacing: 1.8px;
+    font-size: 2em;
+}
+
+.draw-area{
+    flex-basis: 80%;
+    padding: 1vh 1vw;
+    padding-right: 0;
+}
+
 .heading{
     position: relative;
-    top: 5px;
+    top: 0.7vh;
 }
 
 .heading a{
@@ -53,8 +81,8 @@ canvas{
     border-radius: 50%;
     padding: 0;
     inset: 0;
-    margin-top: 81vh;
-    margin-left: 94.7vw;
+    margin-top: 86vh;
+    margin-left: 94vw;
     border-style: none;
     background-color: rgba(0, 0, 0, 0);
 }
