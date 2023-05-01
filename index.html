@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Sacramento&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Sacramento&family=Sigmar&display=swap"
         rel="stylesheet">
-    <title>Drawing Tool</title>
+    <title>DrawME</title>
 </head>
 <body>
     <header>
@@ -20,10 +20,37 @@
     </header>
 
     <main>
-        <canvas>
-        </canvas>
-        <button class="save"><img src="./Images/floppy-disk.png" alt="Save"></button>
-        
+    
+        <section class="tools">
+            <h1>Tools</h1>
+
+            <button type="submit" id="color">
+                <img src="Images/face-paint.png" alt="buttonpng" border="0" />
+                COLOR
+              </button>
+
+              <button type="submit" id="brush">
+                <img src="Images\brush.png" alt="buttonpng" border="0" />
+                BRUSHES
+              </button>
+
+              <button type="submit" id="shapes">
+                <img src="Images/shapes.png" alt="buttonpng" border="0" />
+                SHAPES
+              </button>
+
+        </section>
+
+        <section class="draw-area">
+    
+            <canvas>
+                
+            </canvas>
+    
+            <button class="save"><img src="./Images/floppy-disk.png" alt="Save"></button>
+    
+        </section>
+    
     </main>
     
 </body>
