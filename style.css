@@ -7,7 +7,7 @@
 header{
     margin: 0;
     height:7vh;
-    background-color:  #36454F;
+    background-color:  #3E497A;
     font-family:monospace;
     letter-spacing: 1px;
     text-align: center;
@@ -16,7 +16,7 @@ header{
 main{
     margin: 0;
     height: 93vh;
-    background-color: #C8C7C2;
+    background-color: #EDF5FC;
     /* position: relative; */
     display: flex;
     flex-direction: row;
@@ -41,7 +41,7 @@ canvas{
 
 .tools{
     flex-basis: 250px;
-    background-color: #EDF5FC;
+    background-color: #ffffff;
     box-sizing: border-box;
     height: 93%;
     border-radius: 10px;
@@ -60,12 +60,12 @@ canvas{
     font-style: inherit; 
     font-family: monospace;
     color: rgb(87, 87, 87);
-    background-color: #EDF5FC;
+    background-color: white;
     cursor: pointer;
 }
 
 #color:hover{
-    cursor: pointer; background-color: rgba(222, 214, 199, 0.326); transition: .4s;
+    cursor: pointer; background-color: #EDF5FC; transition: .4s;
 }
 
 #brush{
@@ -77,11 +77,11 @@ canvas{
     font-style: inherit; 
     font-family: monospace;
     color: rgb(87, 87, 87);
-    background-color:#EDF5FC;
+    background-color:white;
 }
 
 #brush:hover{
-    cursor: pointer; background-color: rgba(222, 214, 199, 0.326); transition: .4s;
+    cursor: pointer; background-color: #EDF5FC; transition: .4s;
 }
 
 
@@ -94,11 +94,11 @@ canvas{
     font-style: inherit; 
     font-family: monospace;
     color: rgb(87, 87, 87);
-    background-color:#EDF5FC;
+    background-color:white;
 }
 
 #shapes:hover{
-    cursor: pointer; background-color: rgba(222, 214, 199, 0.326); transition: .4s;
+    cursor: pointer; background-color: #EDF5FC; transition: .4s;
 }
 
 .tools h1{
