@@ -24,21 +24,35 @@
         <section class="tools">
             <h1>Tools</h1>
             <div class="tool-icon">
-                <img src="./Images/face-paint.png" alt="Pallette">
+
+                <button class="btn-icon">
+                    <img src="./Images/face-paint.png" alt="palette">
+                    COLOR
+                </button>
+
+                <button class="btn-icon">
+                    <img src="./Images/brush.png" alt="brush">
+                    BRUSHES
+                </button>
+
+                <button class="btn-icon">
+                    <img src="./Images/shapes.png" alt="shapes">
+                    SHAPES
+                </button>
             </div>
         </section>
 
         <section class="draw-area">
     
-            <canvas>
+            <canvas id="canvas">
                 
             </canvas>
     
-            <button class="save"><img src="./Images/floppy-disk.png" alt="Save"></button>
+            <button class="save" id="save"><img src="./Images/floppy-disk.png" alt="Save"></button>
     
         </section>
     
     </main>
-    
+    <script src="./index.js"></script>
 </body>
 </html>

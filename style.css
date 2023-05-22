@@ -7,7 +7,8 @@
 header{
     margin: 0;
     height:7vh;
-    background-color: #43bccd;
+    /* background-color: #43bccd; */
+    background-color: #3E497A;
     font-family: 'Sacramento', cursive;
     text-align: center;
 }
@@ -15,7 +16,8 @@ header{
 main{
     margin: 0;
     height: 93vh;
-    background-color: #8ED7E1;
+    /* background-color: #8ED7E1; */
+    background-color: #EDF5FC;
     /* position: relative; */
     display: flex;
     flex-direction: row;
@@ -40,7 +42,8 @@ canvas{
 
 .tools{
     flex-basis: 250px;
-    background-color: #EDF5FC;
+    /* background-color: #EDF5FC; */
+    background-color: #ffffff;
     box-sizing: border-box;
     height: 93%;
     border-radius: 10px;
@@ -56,8 +59,23 @@ canvas{
     font-size: 2em;
 }
 
-.tool-icon img{
-    height: 5vh;
+.btn-icon{
+    margin: 6vh;
+    height: 80px;
+    width: 100px;
+    border-style: none;
+    border-radius: 4px;
+    font-style: inherit;
+    font-family: monospace;
+    color: rgb(87, 87, 87);
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    cursor: pointer;
+    background-color: #EDF5FC;
+    transition: .4s;
 }
 
 .draw-area{
