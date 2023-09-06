@@ -7,40 +7,76 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Sacramento&family=Sigmar&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Sacramento&family=Sigmar&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="./Images/brush.png" type="image/png">
     <title>Drawing Tool</title>
 </head>
 <body>
     <header>
         <div class="heading">
-            <a href="./index.html">DrawME</a>
+            <p>DrawME</p>
         </div>
     </header>
 
     <main>
     
-        <section class="tools">
-            <h1>Tools</h1>
-            <div class="tool-icon">
+            <section class="tools-board">
+                <h1>Tools</h1>
+                <div class="row">
+                    <label class="title">Shapes</label>
+                    <ul class="options">
+                        <li class="option tool" id="rectangle">
+                            <img src="./Images/icons/rectangle.svg" alt="">
+                            <span>Rectangle</span>
+                        </li>
+                        <li class="option tool" id="circle">
+                            <img src="./Images/icons/circle.svg" alt="">
+                            <span>Circle</span>
+                        </li>
+                        <li class="option tool" id="triangle">
+                            <img src="./Images/icons/triangle.svg" alt="">
+                            <span>Triangle</span>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="fill-color">
+                            <label for="fill-color">Fill color</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <label class="title">Options</label>
+                    <ul class="options">
+                        <li class="option active tool" id="brush">
+                            <img src="./Images/icons/brush.svg" alt="">
+                            <span>Brush</span>
+                        </li>
+                        <li class="option tool" id="eraser">
+                            <img src="./Images/icons/eraser.svg" alt="">
+                            <span>Eraser</span>
+                        </li>
+                        <li class="option">
+                            <input type="range" id="size-slider" min="1" max="30" value="5">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row colors">
+                    <label class="title">Colors</label>
+                    <ul class="options">
+                        <li class="option"></li>
+                        <li class="option selected"></li>
+                        <li class="option"></li>
+                        <li class="option"></li>
+                        <li class="option">
+                            <input type="color" id="color-picker" value="#4A98F7">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row buttons">
+                    <button class="clear-canvas">Clear Canvas</button>
+                </div>
 
-                <button class="btn-icon">
-                    <img src="./Images/face-paint.png" alt="palette">
-                    COLOR
-                </button>
-
-                <button class="btn-icon">
-                    <img src="./Images/brush.png" alt="brush">
-                    BRUSHES
-                </button>
-
-                <button class="btn-icon">
-                    <img src="./Images/shapes.png" alt="shapes">
-                    SHAPES
-                </button>
-            </div>
-        </section>
+            </section>
 
         <section class="draw-area">
     
